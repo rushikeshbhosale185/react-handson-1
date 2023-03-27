@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import ClassComponent from './Components/ClassComponent';
+import FunctionalComponent from './Components/FunctionalComponent';
 
 function App() {
+  const [functionData,setFunctionData] = useState(false);
+  const [classData,setClassData] = useState(false);
+  const changeFn = ()=>{
+    setFunctionData(!functionData);
+  }
+  const changeCls = ()=>{
+    setClassData(!classData);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Styling using Functional and Class Components</h1><br></br>
+        <button className='btn-fn' onClick={changeFn}>Click Here to see the Styling in Functional Component</button><br/><br/>
+        <button className='btn-cls' onClick={changeCls}>Click Here to see the Styling in Class Component</button>
+        <div className='flex-box'>
+          { functionData && <FunctionalComponent/> }
+          { classData && <ClassComponent/> }
+        </div>
     </div>
   );
 }

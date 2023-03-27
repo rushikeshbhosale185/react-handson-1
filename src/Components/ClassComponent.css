@@ -1,0 +1,13 @@
+.cls{
+    height: 11rem;
+    width: 30rem;
+    border-radius: 12px;
+    border: 4px groove darkblue;
+    background-color: rgb(20, 38, 55);
+    color: aqua;
+   
+}
+h3{
+    color: black;
+    text-shadow: 2px 2px 15px rgb(252, 3, 3);
+}

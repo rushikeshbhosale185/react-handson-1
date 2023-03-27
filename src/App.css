@@ -1,10 +1,58 @@
 .App {
   text-align: center;
+  padding: 3rem;
+  background-image: linear-gradient(to right,#2E3192,#1BFFFF);
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+h1{
+  font-family: cursive;
+  color: aqua;
+
+}
+
+.flex-box{
+  display: flex;
+  margin-top: 4rem;
+  gap: 10rem;
+}
+
+.btn-fn{
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 23px;
+}
+.btn-cls{
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 23px;
+}
+
+.btn-fn:hover{
+  border-radius: 33px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  padding: 20px;
+  background-color: aquamarine;
+  color: darkmagenta;
+  border: 2px dotted green;
+  font-family: 'Times New Roman', Times, serif;
+}
+.btn-cls:hover{
+  border-radius: 33px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  padding: 20px;
+  background-color: aquamarine;
+  color: darkmagenta;
+  border: 2px dotted green;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 @media (prefers-reduced-motion: no-preference) {

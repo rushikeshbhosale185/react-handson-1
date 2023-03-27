@@ -1,0 +1,12 @@
+.fn{
+height: 11rem;
+width: 30rem;
+border-radius: 12px;
+border: 4px dashed darkred;
+background-color: rgb(18, 46, 45);
+color: rgb(221, 0, 255);
+}
+h3{
+color: rgb(251, 251, 251);
+text-shadow: 2px 2px 15px rgb(140, 252, 3);
+}
